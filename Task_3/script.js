@@ -1,74 +1,51 @@
 const carouselSlides = [
   {
-    title: "Sunrise Workspace",
-    description: "A warm, layered composition that feels alive on every screen size.",
+    title: "Sunrise",
+    description: "A simple slide with warm colors.",
     image: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#173f45"/>
-            <stop offset="100%" stop-color="#f0b35f"/>
-          </linearGradient>
-          <radialGradient id="g2" cx="50%" cy="45%" r="60%">
-            <stop offset="0%" stop-color="#fdf5df"/>
-            <stop offset="100%" stop-color="#f3b14e" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="1200" height="800" fill="url(#g1)"/>
-        <circle cx="860" cy="210" r="190" fill="url(#g2)"/>
-        <rect x="100" y="150" width="430" height="440" rx="36" fill="#f5f1ea" opacity="0.92"/>
-        <rect x="180" y="220" width="260" height="34" rx="17" fill="#173f45" opacity="0.9"/>
-        <rect x="180" y="280" width="330" height="18" rx="9" fill="#9db7b5"/>
-        <rect x="180" y="320" width="300" height="18" rx="9" fill="#9db7b5"/>
-        <rect x="180" y="360" width="240" height="18" rx="9" fill="#9db7b5"/>
-        <rect x="620" y="190" width="440" height="330" rx="30" fill="#10292f" opacity="0.95"/>
-        <rect x="690" y="250" width="300" height="36" rx="18" fill="#f0b35f" opacity="0.96"/>
-        <rect x="690" y="315" width="220" height="20" rx="10" fill="#d7ece7"/>
-        <rect x="690" y="352" width="260" height="20" rx="10" fill="#d7ece7"/>
-        <rect x="690" y="390" width="180" height="20" rx="10" fill="#d7ece7"/>
+        <rect width="1200" height="800" fill="#f0b35f"/>
+        <circle cx="870" cy="210" r="150" fill="#fff3cf" opacity="0.9"/>
+        <rect x="120" y="180" width="380" height="400" rx="24" fill="#ffffff" opacity="0.9"/>
+        <rect x="170" y="250" width="220" height="28" rx="8" fill="#173f45"/>
+        <rect x="170" y="300" width="280" height="16" rx="8" fill="#9db7b5"/>
+        <rect x="170" y="335" width="240" height="16" rx="8" fill="#9db7b5"/>
+        <rect x="170" y="370" width="200" height="16" rx="8" fill="#9db7b5"/>
+        <rect x="650" y="220" width="410" height="250" rx="24" fill="#173f45"/>
+        <rect x="700" y="270" width="260" height="30" rx="8" fill="#f5f1ea"/>
+        <rect x="700" y="320" width="190" height="16" rx="8" fill="#d7ece7"/>
+        <rect x="700" y="355" width="240" height="16" rx="8" fill="#d7ece7"/>
       </svg>
     `)
   },
   {
-    title: "Creative Balance",
-    description: "An abstract scene with strong contrast that scales neatly on mobile.",
+    title: "Balance",
+    description: "A clean layout with simple shapes.",
     image: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#f3ede4"/>
-            <stop offset="100%" stop-color="#d5ece6"/>
-          </linearGradient>
-        </defs>
-        <rect width="1200" height="800" fill="url(#g1)"/>
-        <circle cx="370" cy="235" r="135" fill="#d77c3d" opacity="0.9"/>
-        <circle cx="700" cy="300" r="220" fill="#145f57" opacity="0.88"/>
-        <rect x="120" y="500" width="360" height="120" rx="30" fill="#ffffff" opacity="0.9"/>
-        <rect x="150" y="530" width="220" height="18" rx="9" fill="#145f57"/>
-        <rect x="150" y="564" width="160" height="18" rx="9" fill="#9db7b5"/>
-        <rect x="620" y="500" width="460" height="120" rx="30" fill="#0f2f33" opacity="0.94"/>
-        <rect x="670" y="532" width="260" height="20" rx="10" fill="#f3ede4"/>
-        <rect x="670" y="566" width="200" height="20" rx="10" fill="#d6ebe8"/>
+        <rect width="1200" height="800" fill="#f3ede4"/>
+        <circle cx="360" cy="260" r="150" fill="#d77c3d"/>
+        <circle cx="760" cy="300" r="220" fill="#145f57" opacity="0.92"/>
+        <rect x="120" y="500" width="350" height="110" rx="18" fill="#ffffff"/>
+        <rect x="150" y="530" width="200" height="18" rx="6" fill="#145f57"/>
+        <rect x="150" y="560" width="150" height="16" rx="6" fill="#9db7b5"/>
+        <rect x="640" y="500" width="420" height="110" rx="18" fill="#0f2f33"/>
+        <rect x="670" y="530" width="230" height="18" rx="6" fill="#f3ede4"/>
+        <rect x="670" y="560" width="180" height="16" rx="6" fill="#d6ebe8"/>
       </svg>
     `)
   },
   {
-    title: "Motion Layout",
-    description: "A mobile-friendly composition designed to stay readable in every viewport.",
+    title: "Motion",
+    description: "A mobile-friendly slide with simple contrast.",
     image: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#10282d"/>
-            <stop offset="100%" stop-color="#1d6670"/>
-          </linearGradient>
-        </defs>
-        <rect width="1200" height="800" fill="url(#g1)"/>
-        <path d="M130 560 C260 360, 410 360, 560 520 S880 700, 1060 410" fill="none" stroke="#f0b35f" stroke-width="34" stroke-linecap="round"/>
-        <circle cx="270" cy="350" r="90" fill="#f5f1ea" opacity="0.94"/>
-        <circle cx="620" cy="410" r="110" fill="#d6ebe8" opacity="0.9"/>
-        <circle cx="940" cy="300" r="80" fill="#d77c3d" opacity="0.92"/>
-        <rect x="120" y="620" width="960" height="84" rx="26" fill="#f5f1ea" opacity="0.16"/>
+        <rect width="1200" height="800" fill="#10282d"/>
+        <path d="M120 550 C250 380, 410 360, 560 510 S880 680, 1060 420" fill="none" stroke="#f0b35f" stroke-width="30" stroke-linecap="round"/>
+        <circle cx="270" cy="330" r="90" fill="#f5f1ea"/>
+        <circle cx="620" cy="410" r="110" fill="#d6ebe8"/>
+        <circle cx="940" cy="300" r="80" fill="#d77c3d"/>
+        <rect x="120" y="620" width="960" height="70" rx="20" fill="#ffffff" opacity="0.12"/>
       </svg>
     `)
   }
@@ -229,7 +206,6 @@ function nextQuestion() {
 
   if (currentQuestion < quizQuestions.length - 1) {
     currentQuestion += 1;
-    quizNext.textContent = "Next question";
     renderQuestion();
     return;
   }
