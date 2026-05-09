@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 | To-Do Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="logo">Apex Task 4</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="notes.html" class="active">To-Do Notes</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="tag">To-Do / Note App</p>
+        <h2>Save tasks with localStorage</h2>
+        <p class="lead">
+          Add, complete, or delete tasks. All data is saved automatically in your browser.
+        </p>
+
+        <div class="note-controls">
+          <input id="noteInput" type="text" placeholder="Write a task or note..." />
+          <button id="addNoteBtn" type="button">Add</button>
+          <button id="clearNotesBtn" type="button" class="secondary">Clear All</button>
+        </div>
+
+        <ul id="notesList" class="notes-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Frontend Developer | Task 4 To-Do Notes Page</p>
+    </div>
+  </footer>
+
+  <script src="notes.js"></script>
+</body>
+</html>

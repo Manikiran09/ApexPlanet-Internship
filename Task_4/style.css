@@ -83,6 +83,11 @@ nav a:hover {
   color: #fff;
 }
 
+nav a.active {
+  background: rgba(26, 151, 117, 0.35);
+  color: #fff;
+}
+
 .section {
   padding: 56px 0;
 }
@@ -404,4 +409,17 @@ button.secondary:hover {
   .products-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.btn-link {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: color 200ms ease;
+}
+
+.btn-link:hover {
+  color: var(--primary-light);
 }

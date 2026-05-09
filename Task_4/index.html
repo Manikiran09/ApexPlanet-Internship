@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task 4 | Portfolio + Notes + Products</title>
+  <title>Task 4 | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,99 +11,86 @@
     <div class="container nav-wrap">
       <h1 class="logo">Apex Task 4</h1>
       <nav>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#notes">To-Do Notes</a>
-        <a href="#products">Products</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="notes.html">To-Do Notes</a>
+        <a href="products.html">Products</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="portfolio" class="section">
+    <section class="section">
       <div class="container">
-        <p class="tag">Personal Portfolio</p>
-        <h2>Frontend Developer</h2>
+        <p class="tag">Welcome</p>
+        <h2>Task 4: Multi-Page Application</h2>
         <p class="lead">
-          I build responsive interfaces with clean HTML, CSS, and JavaScript.
+          A responsive web application demonstrating portfolio showcase, task management with localStorage, and product filtering.
         </p>
+      </div>
+    </section>
 
+    <section class="section alt">
+      <div class="container">
+        <h2>Explore the Pages</h2>
         <div class="portfolio-grid">
           <article class="card">
-            <h3>About</h3>
+            <h3>Portfolio</h3>
             <p>
-              I focus on creating user-friendly pages that adapt well across mobile, tablet, and desktop.
+              Showcase of skills and featured projects. A professional portfolio page with About, Skills, and Contact sections.
             </p>
+            <p class="meta">Responsive layout, semantic HTML</p>
+            <a href="portfolio.html" class="btn-link">Visit Portfolio →</a>
           </article>
+
           <article class="card">
-            <h3>Projects</h3>
-            <ul>
-              <li>Weather dashboard with API integration</li>
-              <li>Quiz app with score tracking</li>
-              <li>Responsive product listing interface</li>
-            </ul>
+            <h3>To-Do Notes</h3>
+            <p>
+              Create, complete, and manage tasks. All notes are saved to localStorage so your tasks persist between sessions.
+            </p>
+            <p class="meta">localStorage, JavaScript state management</p>
+            <a href="notes.html" class="btn-link">Go to Notes →</a>
           </article>
+
           <article class="card">
-            <h3>Contact</h3>
-            <p>Email: demo.frontend@example.com</p>
-            <p>Location: Remote</p>
+            <h3>Products</h3>
+            <p>
+              Browse and filter products by category. Sort by price or rating. Demonstrates dynamic rendering and state filtering.
+            </p>
+            <p class="meta">Filtering, sorting, grid layout</p>
+            <a href="products.html" class="btn-link">View Products →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="notes" class="section alt">
+    <section class="section">
       <div class="container">
-        <p class="tag">To-Do / Note App</p>
-        <h2>Save tasks with localStorage</h2>
-
-        <div class="note-controls">
-          <input id="noteInput" type="text" placeholder="Write a task or note" />
-          <button id="addNoteBtn" type="button">Add</button>
-          <button id="clearNotesBtn" type="button" class="secondary">Clear All</button>
+        <h2>Features</h2>
+        <div class="portfolio-grid">
+          <article class="card">
+            <h3>Responsive Design</h3>
+            <p>All pages adapt beautifully to mobile, tablet, and desktop screens with CSS media queries.</p>
+          </article>
+          <article class="card">
+            <h3>Modern CSS</h3>
+            <p>Gradients, smooth animations, hover effects, and beautiful shadows throughout the design.</p>
+          </article>
+          <article class="card">
+            <h3>Interactive JavaScript</h3>
+            <p>Dynamic filtering, sorting, form handling, and browser storage for data persistence.</p>
+          </article>
         </div>
-
-        <ul id="notesList" class="notes-list"></ul>
-      </div>
-    </section>
-
-    <section id="products" class="section">
-      <div class="container">
-        <p class="tag">Product Listing</p>
-        <h2>Filter and sort products</h2>
-
-        <div class="filters">
-          <label>
-            Category
-            <select id="categoryFilter">
-              <option value="all">All</option>
-              <option value="electronics">Electronics</option>
-              <option value="fashion">Fashion</option>
-              <option value="home">Home</option>
-            </select>
-          </label>
-
-          <label>
-            Sort By
-            <select id="sortFilter">
-              <option value="default">Default</option>
-              <option value="priceLow">Price: Low to High</option>
-              <option value="priceHigh">Price: High to Low</option>
-              <option value="ratingHigh">Rating: High to Low</option>
-            </select>
-          </label>
-        </div>
-
-        <div id="productsGrid" class="products-grid"></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Task 4 completed with HTML, CSS, and JavaScript.</p>
+      <p>&copy; 2026 Frontend Developer | Task 4 Application</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

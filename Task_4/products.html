@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 | Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="logo">Apex Task 4</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="notes.html">To-Do Notes</a>
+        <a href="products.html" class="active">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="tag">Product Listing</p>
+        <h2>Filter and sort products</h2>
+        <p class="lead">
+          Browse our product catalog. Filter by category or sort by price and rating.
+        </p>
+
+        <div class="filters">
+          <label>
+            Category
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="home">Home</option>
+            </select>
+          </label>
+
+          <label>
+            Sort By
+            <select id="sortFilter">
+              <option value="default">Default</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
+              <option value="ratingHigh">Rating: High to Low</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="productsGrid" class="products-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Frontend Developer | Task 4 Products Page</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>
