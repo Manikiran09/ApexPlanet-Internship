@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 | Responsive Interactive Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ApexPlanet Internship Task</p>
+        <h1>Responsive design, a carousel, a quiz, and live API data in one page.</h1>
+        <p class="lede">
+          This standalone folder demonstrates responsive layouts with media queries, JavaScript-powered interactivity, and data fetched from a public API.
+        </p>
+        <div class="hero-actions">
+          <a href="#carousel" class="primary-btn">Explore the carousel</a>
+          <a href="#quiz" class="secondary-btn">Try the quiz</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="stat-card">
+          <span>Responsive</span>
+          <strong>3 breakpoints</strong>
+        </div>
+        <div class="stat-card">
+          <span>Interactive</span>
+          <strong>Quiz + carousel</strong>
+        </div>
+        <div class="stat-card">
+          <span>API driven</span>
+          <strong>Live content</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-grid">
+      <section class="panel carousel-panel" id="carousel">
+        <div class="section-heading">
+          <p class="eyebrow">JavaScript Carousel</p>
+          <h2>Rotate through custom artwork with auto-play and controls.</h2>
+        </div>
+        <div class="carousel">
+          <div class="carousel-stage" aria-live="polite">
+            <img id="carouselImage" alt="Carousel slide" />
+            <div class="carousel-caption">
+              <p id="carouselTitle"></p>
+              <span id="carouselDescription"></span>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prevSlide" type="button" aria-label="Previous slide">Prev</button>
+            <div class="dots" id="slideDots" aria-label="Carousel navigation"></div>
+            <button id="nextSlide" type="button" aria-label="Next slide">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel quiz-panel" id="quiz">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Quiz</p>
+          <h2>Answer a short quiz and get instant feedback.</h2>
+        </div>
+        <div class="quiz" id="quizApp">
+          <div class="quiz-meta">
+            <span id="questionCounter"></span>
+            <span id="scoreCounter"></span>
+          </div>
+          <h3 id="questionText"></h3>
+          <div class="answers" id="answerList"></div>
+          <div class="quiz-actions">
+            <button id="quizNext" type="button">Next question</button>
+            <button id="quizRestart" type="button" class="ghost-btn">Restart</button>
+          </div>
+          <p id="quizFeedback" class="feedback"></p>
+        </div>
+      </section>
+
+      <section class="panel api-panel" id="api">
+        <div class="section-heading">
+          <p class="eyebrow">Fetch Data from an API</p>
+          <h2>Pull a fresh joke from a public endpoint whenever you want.</h2>
+        </div>
+        <div class="api-card">
+          <p class="api-label">Live response</p>
+          <blockquote id="jokeText">Loading a fresh joke...</blockquote>
+          <button id="refreshJoke" type="button">Fetch another joke</button>
+          <p id="apiStatus" class="status"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
